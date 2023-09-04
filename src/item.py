@@ -107,3 +107,19 @@ class Item:
         """ Статический метод, возвращающий число из числа-строки """
 
         return int(float(number))
+
+    def __repr__(self):
+
+        """ Метод, который выводит ифнормацию для разработиков """
+
+        return f"{self.__class__.__name__}('{self.__name}', {self.price}, {self.quantity})"
+
+    def __str__(self):
+
+        """ Метод, который выводит информацию для пользователей """
+
+        return self.__name
+
+
+
+
