@@ -72,14 +72,19 @@ def test_string_to_number():
     assert Item.string_to_number("5.5") == 5
 
 
-    def test_repr(item1):
+def test_repr(item1):
 
-        """ Тест метода repr """
+    """ Тест метода repr """
 
-        assert repr(item1) == "Item('Смартфон', 10000, 20)"
+    assert repr(item1) == "Item('Смартфон', 10000, 20)"
 
-    def test_str(item1):
+def test_str(item1):
 
-        """ Тест метода str """
+    """ Тест метода str """
 
-        assert str(item1) == "Смартфон"
+    assert str(item1) == "Смартфон"
+
+def test_add(item1, phone1):
+    """ Тест метода add """
+
+    assert item1 + phone1 == 30
